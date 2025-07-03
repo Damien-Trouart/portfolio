@@ -1,0 +1,26 @@
+%btn-shared {
+    font-family: $btn-font;
+    border: 1px solid $txt-maincolor;
+    border-radius: 5px;
+    background-color: $background-maincolor;
+    box-shadow: $light-shadowcolor 0 4px 3px 1px;
+    // transition: background 0.2s, transform 0.2s;
+}
+
+
+//?Mixins pour la réaction des boutons.
+%btn-active {
+    &:active {
+        transform: translateY(2px);
+        box-shadow: $light-shadowcolor 0 2px 3px 1px;
+        background-color: $gradient-dark;
+    }
+}
+
+%btn-hover {
+    &:hover {
+        cursor: pointer;
+        background-color: $gradient-dark;
+        transform: translateY(-2px);
+    }
+}

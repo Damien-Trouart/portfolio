@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "outDir": "javascript",
+        "moduleResolution": "Bundler",
+        "target": "ESNext",
+        "noEmitOnError": true,
+        "strict": true
+    },
+    "files":[
+        "typescript/main.ts",
+        "typescript/burger.ts",
+        "typescript/project.ts"
+    ]
+}

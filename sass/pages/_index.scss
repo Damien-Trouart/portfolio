@@ -1,0 +1,57 @@
+.home {
+    .home_txt {
+        .helloThere {
+            font-size: 3rem;
+            font-family: $title-font;
+        }
+
+        p {
+            font-size: large;
+        }
+
+        .name {
+            font-size: larger;
+        }
+
+        .home-btns {
+            .btn {
+                &:active a {
+                    font-weight: bolder;
+                }
+
+                a {
+                    font-family: $btn-font;
+                    font-weight: 500;
+                    padding: 5px 15px;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+                    color: $txt-maincolor;
+                    text-decoration: none;
+
+                    .btn-img {
+                        width: 2rem;
+                        padding-right: 0.5rem;
+
+                        img {
+                            @include img(contain);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .home_img {
+        width: 8rem;
+        height: auto;
+
+        & img {
+            @include img(cover);
+            aspect-ratio: 1/1;
+            border-radius: 90%;
+
+        }
+    }
+}

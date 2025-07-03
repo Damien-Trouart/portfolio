@@ -1,0 +1,38 @@
+//? Main layout
+main {
+    margin: 0 3rem;
+    display: grid;
+    grid-template-areas:
+        "home"
+        "projects"
+        "contact";
+
+    //!Each section
+    &>section {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    @include responsive ($breakpoint-desktop){
+        width: 80%;
+        margin: auto;
+        margin: 0 10rem;
+    }
+}
+
+//? Home section
+.home {
+    grid-area: home;
+
+    .home_txt {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 50%;
+    }
+}
+

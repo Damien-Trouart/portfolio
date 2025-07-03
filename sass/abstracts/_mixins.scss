@@ -1,0 +1,21 @@
+//?Mixins pour le responsive
+@mixin responsive($min, $max: null) {
+    @if $max {
+        @media screen and (min-width: #{$min}) and (max-width: #{$max}) {
+            @content;
+        }
+    }
+
+    @else {
+        @media screen and (min-width: #{$min}) {
+            @content;
+        }
+    }
+}
+
+//? Mixin pour les images
+@mixin img ($of){
+    width: 100%;
+    height: 100%;
+    object-fit: $of;
+}

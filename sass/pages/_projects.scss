@@ -1,0 +1,59 @@
+#projects {
+            grid-area: projects;
+            justify-content: space-evenly;
+
+            .projects-headline {
+                font-family: $btn-font;
+            }
+
+            .projectContainer {
+                padding: 0.5rem;
+                border-radius: 5px;
+                /* border:1px solid var(--txt-maincolor); */
+                /* box-shadow: var(--light-shadowcolor) 0 0 3px 1px; */
+                background-color: $gradient-light;
+                margin: 1rem 0;
+                width: 100%;
+                height: 25vh;
+                overflow: hidden;
+                display: grid;
+                grid-template-columns: repeat(4, 25%);
+                grid-template-rows: 1fr 3fr 1fr;
+                grid-template-areas:
+                    "title title img img"
+                    "p p img img"
+                    "btn btn img img";
+                align-items: center;
+
+                &>* {
+                    overflow: hidden;
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+
+                .projectImgDiv {
+                    width: 100%;
+                    height: 100%;
+                    grid-area: img;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 5px;
+
+                    img {
+                        @include img(cover);
+                    }
+                }
+
+                .projectTitle {
+                    grid-area: title;
+                    font-family: $title-font;
+                }
+
+                .projectDesc {
+                    grid-area: p;
+                    overflow: auto;
+                    padding: 0.5rem;
+                }
+            }
+        }

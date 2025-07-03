@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'IMFellDoublePica';
+    src: url('/portfolio/2.0/fonts/IMFellDoublePica.ttf');
+}
+
+@font-face {
+    font-family: 'Cinzel';
+    src: url('/portfolio/2.0/fonts/Cinzel.ttf');
+}
+
+@font-face {
+    font-family: 'Titillium Web';
+    src: url('/portfolio/2.0/fonts/TitilliumWeb.ttf');
+}
+
+@font-face {
+    font-family: 'BebasNeue';
+    src: url('/portfolio/2.0/fonts/BebasNeue.ttf');
+}
+
+body {
+    background-color: $background-maincolor;
+    color: $txt-maincolor;
+    font-family: $main-font;
+}
+
+span{
+    font-weight: bold;
+}
