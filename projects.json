@@ -1,23 +1,23 @@
 [
     {
         "id": 1,
-        "title": "projet1",
-        "image": "./image/jesus.jpg",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, ipsum?",
-        "link": "https://www.youtube.com/"
+        "title": "Wedding dress shop website",
+        "image": "./image/robe.jpg",
+        "description": "Redesign of a no-code website during a one-month internship as part of a short web developer/integrator training course.",
+        "link": "https://github.com/Damien-Trouart/boutique-robe-mariage"
     },
     {
         "id": 2,
-        "title": "projet2",
-        "image": "./image/michael2.png",
-        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, unde?",
-        "link": ""
+        "title": "Games Vault",
+        "image": "./image/gamesVault.jpg",
+        "description": "Project in developement",
+        "link": "https://github.com/Damien-Trouart/games-vault"
     },
     {
         "id": 3,
         "title": "projet3",
-        "image": "./image/nic-cage.jpg",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, maiores?",
+        "image": "./image/soon.png",
+        "description": "to be continued",
         "link": ""
     }
 ]

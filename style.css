@@ -1,54 +1,61 @@
-*, ::before, ::after{ 
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.hide{
+.hide {
     display: none;
 }
 
-@font-face{
-    font-family:'IMFellDoublePica';
-    src: url(/portfolio/2.0/fonts/IMFellDoublePica.ttf)
+@font-face {
+    font-family: 'IMFellDoublePica';
+    src: url(/portfolio/fonts/IMFellDoublePica.ttf)
 }
+
 @font-face {
     font-family: 'Cinzel';
-    src: url(/portfolio/2.0/fonts/Cinzel.ttf);
+    src: url(/portfolio/fonts/Cinzel.ttf);
 }
+
 @font-face {
     font-family: 'Titillium Web';
-    src: url(/portfolio/2.0/fonts/TitilliumWeb.ttf);
+    src: url(/portfolio/fonts/TitilliumWeb.ttf);
 }
+
 @font-face {
     font-family: 'BebasNeue';
-    src: url(/portfolio/2.0/fonts/BebasNeue.ttf);
+    src: url(/portfolio/fonts/BebasNeue.ttf);
 }
 
-:root{
-/**Background*/
-    --background-maincolor:white /*rgb(21, 22, 39)*/;
-    --gradient-light:whitesmoke;
-    --gradient-dark:lightgrey;
+:root {
+    /**Background*/
+    --background-maincolor: white
+        /*rgb(21, 22, 39)*/
+    ;
+    --gradient-light: whitesmoke;
+    --gradient-dark: lightgrey;
 
-/**Text*/
-    --txt-maincolor:  #333;
-    --txt-scdcolor:  white;
+    /**Text*/
+    --txt-maincolor: #333;
+    --txt-scdcolor: white;
     --txt-activecolor: lightgrey;
 
-/**Font*/
-    --main-font:"IMFellDoublePica";
-    --title-font:"BebasNeue";
-    --btn-font:"Cinzel";
+    /**Font*/
+    --main-font: "IMFellDoublePica";
+    --title-font: "BebasNeue";
+    --btn-font: "Cinzel";
 
 
-/**Shadow*/
-    --main-shadowcolor:rgba(0, 0, 0, 0.5);
-    --light-shadowcolor:grey;
+    /**Shadow*/
+    --main-shadowcolor: rgba(0, 0, 0, 0.5);
+    --light-shadowcolor: grey;
 
-/** Default*/
-    background-color:var(--background-maincolor);
-    color:var(--txt-maincolor);
+    /** Default*/
+    background-color: var(--background-maincolor);
+    color: var(--txt-maincolor);
     font-family: var(--main-font);
 }
 
@@ -56,7 +63,7 @@ box-sizing: border-box;
 
 /* ? PHONE */
 @media screen and (min-width:360px) {
-    
+
 
     span {
         font-weight: bold;
@@ -281,6 +288,7 @@ box-sizing: border-box;
                 transform: translate(-50%, -50%);
             } */
             .contactContainer {
+
                 /* position: relative; */
                 .contactText {
                     /* position: absolute; */
@@ -341,23 +349,25 @@ box-sizing: border-box;
                         grid-area: msgi;
                     }
 
-                    .btn{
+                    .btn {
                         font-family: var(--btn-font);
                         border: 1px solid var(--txt-maincolor);
                         background-color: var(--background-maincolor);
                         box-shadow: var(--light-shadowcolor) 0 4px 3px 1px;
                         border-radius: 5px;
                         padding: 5px;
+
                         &:active {
                             transform: translateY(2px);
                             box-shadow: var(--light-shadowcolor) 0 2px 3px 1px;
                             background-color: var(--gradient-dark);
                         }
                     }
+
                     .eraseBtn {
                         grid-area: eb;
                     }
-                    
+
                     .sendBtn {
                         grid-area: sb;
                     }
@@ -376,7 +386,7 @@ box-sizing: border-box;
 /*? DESKTOP */
 @media screen and (min-width:1024px) {
     main {
-        
+
         width: 80%;
         margin: auto;
         margin: 0 10rem;
@@ -437,41 +447,41 @@ box-sizing: border-box;
         }
 
 
-        
+
         /*! Projects */
-                #projects {
-                    .projectContainer {
-                        &:hover {
-                            z-index: 10;
-                            background: linear-gradient(to right, whitesmoke, var(--gradient-dark));
-        
-                            .projectImgDiv img {
-        
-                                transform: scale(1.1);
-                            }
-                        }
-        
-                        .projectBtn {
-        
-                            &:hover {
-                                cursor: pointer;
-                                background-color: var(--gradient-dark);
-                                transform: translateY(-2px);
-                                font-weight: 500;
-                            }
-                        }
-        
-                        .projectImgDiv {
-                            img {
-                                transition: transform 0.3s;
-                            }
-                        }
+        #projects {
+            .projectContainer {
+                &:hover {
+                    z-index: 10;
+                    background: linear-gradient(to right, whitesmoke, var(--gradient-dark));
+
+                    .projectImgDiv img {
+
+                        transform: scale(1.1);
                     }
                 }
+
+                .projectBtn {
+
+                    &:hover {
+                        cursor: pointer;
+                        background-color: var(--gradient-dark);
+                        transform: translateY(-2px);
+                        font-weight: 500;
+                    }
+                }
+
+                .projectImgDiv {
+                    img {
+                        transition: transform 0.3s;
+                    }
+                }
+            }
+        }
 
 
 
         /*! Contact */
-        
+
     }
 }

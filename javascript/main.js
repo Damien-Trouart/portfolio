@@ -11,7 +11,7 @@ main.innerHTML += `
                 <p>At 32, I swapped pipettes for code. My path through science and varied industries led me to web development — where I now grow as a <span>junior fullstack</span> web developer.</p>
             </div>
             <div class="home_img">
-                <img src="./../image/pp.jpg" alt="profile picture">
+                <img src="./image/pp.jpg" alt="profile picture">
             </div>
         </section>
     `;
