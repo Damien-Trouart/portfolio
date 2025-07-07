@@ -191,12 +191,14 @@ main > section {
 }
 #contact .contactContainer .contactForm .nameInput {
   grid-area: ni;
+  width: 25%;
 }
 #contact .contactContainer .contactForm .mailLabel {
   padding-top: 1rem;
   grid-area: ml;
 }
 #contact .contactContainer .contactForm .mailInput {
+  width: 25%;
   grid-area: mi;
 }
 #contact .contactContainer .contactForm .msgLabel {
@@ -293,14 +295,18 @@ main > section {
   overflow: hidden;
 }
 #contact .contactTitle {
-  font-family: var(--btn-font);
+  font-family: "Cinzel";
+  font-size: 3rem;
+}
+#contact .contactContainer {
+  width: 100%;
 }
 #contact .contactContainer .contactText {
   width: 100%;
   text-align: justify;
 }
 #contact .contactContainer .contactForm > * {
-  font-family: var(--main-font);
+  font-family: "IMFellDoublePica";
 }
 
 #projects {
@@ -309,6 +315,7 @@ main > section {
 }
 #projects .projects-headline {
   font-family: "Cinzel";
+  font-size: 3rem;
 }
 #projects .projectContainer {
   padding: 0.5rem;

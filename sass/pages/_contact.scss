@@ -8,10 +8,13 @@
             overflow: hidden;
 
             .contactTitle {
-                font-family: var(--btn-font);
+                font-family: $btn-font;
+                font-size: 3rem;
+
             }
 
             .contactContainer {
+                width: 100%;
                 .contactText {
                     width: 100%;
                     text-align: justify;
@@ -19,7 +22,7 @@
 
                 .contactForm {
                     &>* {
-                        font-family: var(--main-font);
+                        font-family: $main-font;
                     }
                 }
             }

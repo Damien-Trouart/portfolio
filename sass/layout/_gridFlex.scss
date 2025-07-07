@@ -74,6 +74,7 @@ main {
             
             .nameInput {
                 grid-area: ni;
+                width: 25%;
             }
             
             .mailLabel {
@@ -82,6 +83,7 @@ main {
             }
             
             .mailInput {
+                width: 25%;
                 grid-area: mi;
             }
             

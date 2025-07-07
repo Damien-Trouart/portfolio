@@ -28,15 +28,15 @@ if (window.matchMedia('screen and (min-width:360px)').matches) {
     homeTxt!.innerHTML +=
         `<div class="home-btns">
             <div class="btn btn-github"><a href="https://github.com/Damien-Trouart" target="_blank">
-                <div class="btn-img"><img src="./logo/github.png"></div>
+                <div class="btn-img"><img src="./logo/github.png" alt="Github logo"></div>
                 Github
             </a></div>
             <div class="btn btn-linkedin"><a href="https://linkedin.com/Damien-Trouart" target="_blank">
-                <div class="btn-img"><img src="./logo/linkedin-logo.png"></div>
+                <div class="btn-img"><img src="./logo/linkedin-logo.png" alt="LinkedIn logo"></div>
                 Linkedin
             </a></div>
             <div class="btn btn-mail"><a href="mailto:damien.trouart@gmail.com" target="_blank">
-                <div class="btn-img"><img src="./logo/email.png"></div>
+                <div class="btn-img"><img src="./logo/email.png" alt="Email logo"></div>
                 Email
             </a></div>
         </div>
