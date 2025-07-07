@@ -1,12 +1,22 @@
 .home {
     .home_txt {
+        @include responsive ($breakpoint-desktop){
+            order: 1;
+            height: 100%;
+        }
         .helloThere {
             font-size: 3rem;
             font-family: $title-font;
+            @include responsive ($breakpoint-desktop){
+                font-size: 5rem;
+            }
         }
 
         p {
             font-size: large;
+            @include responsive ($breakpoint-desktop){
+                font-size: x-large;
+            }
         }
 
         .name {
@@ -46,6 +56,10 @@
     .home_img {
         width: 8rem;
         height: auto;
+        @include responsive ($breakpoint-desktop){
+            order: 2;
+            width: 30rem;
+        }
 
         & img {
             @include img(cover);

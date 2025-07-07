@@ -1,7 +1,7 @@
 //? Boutons Home
 .btn {
-    @extend %btn-shared;
-    @extend %btn-active;
+    @include btn-shared;
+    @include btn-active;
     margin-bottom: 1rem;
 }
 
@@ -17,14 +17,15 @@
 
 @include responsive($breakpoint-desktop) {
     .home-btns {
+        display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
         margin-top: 1rem;
 
-        btn {
+        .btn {
             width: 10rem;
-            @extend btn-hover;
+            @include btn-hover;
 
             &:hover:active {
                 transform: translateY(2px);
@@ -47,16 +48,30 @@
 
 //? Boutons Projects
 .projectBtn {
-    @extend %btn-shared;
+    @include btn-shared;
     height: 25px;
     width: 100px;
     grid-area: btn;
-
-    @include responsive($breakpoint-desktop) {
+    @include btn-active;
+}
+@include responsive($breakpoint-desktop) {
+    .projectBtn {
         @include btn-hover;
 
         &:hover {
             font-weight: 500;
         }
+    }
+}
+
+
+
+//? Boutons Contact
+.contactForm{
+    .btn{
+        @include btn-shared;
+        padding: 5px;
+        @include btn-active;
+        @include btn-hover;
     }
 }

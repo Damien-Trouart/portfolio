@@ -1,4 +1,3 @@
-:root{
 // Couleurs principales
 $background-maincolor: #fff; // ou rgb(21, 22, 39)
 $gradient-light: whitesmoke;
@@ -9,9 +8,9 @@ $txt-scdcolor: #fff;
 $txt-activecolor: lightgrey;
 
 // Fonts
-$main-font: 'IMFellDoublePica', serif;
-$title-font: 'BebasNeue', cursive;
-$btn-font: 'Cinzel', serif;
+$main-font: 'IMFellDoublePica';
+$title-font: 'BebasNeue';
+$btn-font: 'Cinzel';
 
 // Ombres
 $main-shadowcolor: rgba(0, 0, 0, 0.5);
@@ -21,4 +20,3 @@ $light-shadowcolor: grey;
 $breakpoint-mobile: 360px;
 $breakpoint-tablet: 768px;
 $breakpoint-desktop: 1024px;
-}

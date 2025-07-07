@@ -453,7 +453,7 @@
             .projectContainer {
                 &:hover {
                     z-index: 10;
-                    background: linear-gradient(to right, whitesmoke, var(--gradient-dark));
+                    background: linear-gradient(to right, var(--gradient-light), var(--gradient-dark));
 
                     .projectImgDiv img {
 

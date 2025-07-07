@@ -1,0 +1,26 @@
+#contact {
+            padding: 0.5rem;
+            grid-area: contact;
+            /* position: relative; */
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+
+            .contactTitle {
+                font-family: var(--btn-font);
+            }
+
+            .contactContainer {
+                .contactText {
+                    width: 100%;
+                    text-align: justify;
+                }
+
+                .contactForm {
+                    &>* {
+                        font-family: var(--main-font);
+                    }
+                }
+            }
+}

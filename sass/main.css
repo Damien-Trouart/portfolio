@@ -1,11 +1,3 @@
-button {
-  font-family: "Cinzel", serif;
-  border: 1px solid #333;
-  border-radius: 5px;
-  background-color: #fff;
-  box-shadow: grey 0 4px 3px 1px;
-}
-
 *,
 ::before,
 ::after {
@@ -20,57 +12,42 @@ button {
 
 @font-face {
   font-family: "IMFellDoublePica";
-  src: url("/portfolio/2.0/fonts/IMFellDoublePica.ttf");
+  src: url("/portfolio/fonts/IMFellDoublePica.ttf");
 }
 @font-face {
   font-family: "Cinzel";
-  src: url("/portfolio/2.0/fonts/Cinzel.ttf");
+  src: url("/portfolio/fonts/Cinzel.ttf");
 }
 @font-face {
   font-family: "Titillium Web";
-  src: url("/portfolio/2.0/fonts/TitilliumWeb.ttf");
+  src: url("/portfolio/fonts/TitilliumWeb.ttf");
 }
 @font-face {
   font-family: "BebasNeue";
-  src: url("/portfolio/2.0/fonts/BebasNeue.ttf");
+  src: url("/portfolio/fonts/BebasNeue.ttf");
 }
 body {
   background-color: #fff;
   color: #333;
-  font-family: "IMFellDoublePica", serif;
+  font-family: "IMFellDoublePica";
 }
 
-btn {
+span {
+  font-weight: bold;
+}
+
+.btn {
+  font-family: "Cinzel";
+  border: 1px solid #333;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: grey 0 4px 3px 1px;
   margin-bottom: 1rem;
 }
-btn:active {
+.btn:active {
   transform: translateY(2px);
   box-shadow: grey 0 2px 3px 1px;
   background-color: lightgrey;
-}
-btn:active a {
-  font-weight: bolder;
-}
-btn a {
-  font-family: "Cinzel", serif;
-  font-weight: 500;
-  padding: 5px 15px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  color: #333;
-  text-decoration: none;
-}
-btn a .btn-img {
-  width: 2rem;
-  padding-right: 0.5rem;
-}
-btn a .btn-img img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
 }
 
 @media screen and (min-width: 360px) and (max-width: 1023px) {
@@ -84,40 +61,49 @@ btn a .btn-img img {
 }
 @media screen and (min-width: 1024px) {
   .home-btns {
+    display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     margin-top: 1rem;
   }
-  .home-btns btn {
+  .home-btns .btn {
     width: 10rem;
   }
-  .home-btns btn:hover {
+  .home-btns .btn:hover {
     cursor: pointer;
     background-color: lightgrey;
     transform: translateY(-2px);
   }
-  .home-btns btn:hover:active {
+  .home-btns .btn:hover:active {
     transform: translateY(2px);
     background-color: whitesmoke;
   }
-  .home-btns btn:hover a {
+  .home-btns .btn:hover a {
     font-weight: bolder;
   }
-  .home-btns btn .home_img {
+  .home-btns .btn .home_img {
     order: 2;
     width: 10rem;
     height: 10rem;
   }
-  .projectBtn:hover {
-    font-weight: 500;
-  }
 }
 .projectBtn {
+  font-family: "Cinzel";
+  border: 1px solid #333;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: grey 0 4px 3px 1px;
   height: 25px;
   width: 100px;
   grid-area: btn;
 }
+.projectBtn:active {
+  transform: translateY(2px);
+  box-shadow: grey 0 2px 3px 1px;
+  background-color: lightgrey;
+}
+
 @media screen and (min-width: 1024px) {
   .projectBtn:hover {
     cursor: pointer;
@@ -127,4 +113,268 @@ btn a .btn-img img {
   .projectBtn:hover {
     font-weight: 500;
   }
+}
+.contactForm .btn {
+  font-family: "Cinzel";
+  border: 1px solid #333;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: grey 0 4px 3px 1px;
+  padding: 5px;
+}
+.contactForm .btn:active {
+  transform: translateY(2px);
+  box-shadow: grey 0 2px 3px 1px;
+  background-color: lightgrey;
+}
+.contactForm .btn:hover {
+  cursor: pointer;
+  background-color: lightgrey;
+  transform: translateY(-2px);
+}
+
+main {
+  margin: 0 3rem;
+  display: grid;
+  grid-template-areas: "home" "projects" "contact";
+}
+main > section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+@media screen and (min-width: 1024px) {
+  main {
+    width: 80%;
+    margin: auto;
+    margin: 0 10rem;
+  }
+}
+
+.home {
+  grid-area: home;
+}
+@media screen and (min-width: 1024px) {
+  .home {
+    flex-direction: row;
+    overflow: hidden;
+  }
+}
+.home .home_txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 50%;
+}
+@media screen and (min-width: 1024px) {
+  .home .home_txt {
+    order: 1;
+    height: 100%;
+  }
+}
+
+#contact .contactContainer .contactForm {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: 10% 5% 10% 5% 10% 10% 10% 20% 10%;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  grid-template-areas: "nl nl . ." "ni ni ni ni " "ml ml . ." "mi mi mi mi" "msgl msgl . ." "msgi msgi msgi msgi" "msgi msgi msgi msgi" "msgi msgi msgi msgi" "eb eb sb sb";
+}
+#contact .contactContainer .contactForm .nameLabel {
+  padding-top: 1rem;
+  grid-area: nl;
+}
+#contact .contactContainer .contactForm .nameInput {
+  grid-area: ni;
+}
+#contact .contactContainer .contactForm .mailLabel {
+  padding-top: 1rem;
+  grid-area: ml;
+}
+#contact .contactContainer .contactForm .mailInput {
+  grid-area: mi;
+}
+#contact .contactContainer .contactForm .msgLabel {
+  padding-top: 1rem;
+  grid-area: msgl;
+}
+#contact .contactContainer .contactForm .msgInput {
+  height: 100%;
+  grid-area: msgi;
+}
+#contact .contactContainer .contactForm .eraseBtn {
+  grid-area: eb;
+}
+#contact .contactContainer .contactForm .sendBtn {
+  grid-area: sb;
+}
+
+@media screen and (min-width: 1024px) {
+  .home .home_txt {
+    order: 1;
+    height: 100%;
+  }
+}
+.home .home_txt .helloThere {
+  font-size: 3rem;
+  font-family: "BebasNeue";
+}
+@media screen and (min-width: 1024px) {
+  .home .home_txt .helloThere {
+    font-size: 5rem;
+  }
+}
+.home .home_txt p {
+  font-size: large;
+}
+@media screen and (min-width: 1024px) {
+  .home .home_txt p {
+    font-size: x-large;
+  }
+}
+.home .home_txt .name {
+  font-size: larger;
+}
+.home .home_txt .home-btns .btn:active a {
+  font-weight: bolder;
+}
+.home .home_txt .home-btns .btn a {
+  font-family: "Cinzel";
+  font-weight: 500;
+  padding: 5px 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: #333;
+  text-decoration: none;
+}
+.home .home_txt .home-btns .btn a .btn-img {
+  width: 2rem;
+  padding-right: 0.5rem;
+}
+.home .home_txt .home-btns .btn a .btn-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.home .home_img {
+  width: 8rem;
+  height: auto;
+}
+@media screen and (min-width: 1024px) {
+  .home .home_img {
+    order: 2;
+    width: 30rem;
+  }
+}
+.home .home_img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 1/1;
+  border-radius: 90%;
+}
+
+#contact {
+  padding: 0.5rem;
+  grid-area: contact;
+  /* position: relative; */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+#contact .contactTitle {
+  font-family: var(--btn-font);
+}
+#contact .contactContainer .contactText {
+  width: 100%;
+  text-align: justify;
+}
+#contact .contactContainer .contactForm > * {
+  font-family: var(--main-font);
+}
+
+#projects {
+  grid-area: projects;
+  justify-content: space-evenly;
+}
+#projects .projects-headline {
+  font-family: "Cinzel";
+}
+#projects .projectContainer {
+  padding: 0.5rem;
+  /* border:1px solid var(--txt-maincolor); */
+  /* box-shadow: var(--light-shadowcolor) 0 0 3px 1px; */
+  background-color: whitesmoke;
+  margin: 1rem 0;
+  width: 100%;
+  height: 25vh;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: 1fr 3fr 1fr;
+  grid-template-areas: "title title img img" "p p img img" "btn btn img img";
+  align-items: center;
+}
+@media screen and (min-width: 360px) and (max-width: 1023px) {
+  #projects .projectContainer {
+    grid-template-areas: "title title title title" "p p img img" "btn btn img img";
+  }
+}
+@media screen and (min-width: 1024px) {
+  #projects .projectContainer:hover {
+    z-index: 10;
+    background: linear-gradient(to right, whitesmoke, lightgrey);
+  }
+  #projects .projectContainer:hover .projectImgDiv img {
+    transform: scale(1.1);
+  }
+}
+#projects .projectContainer > * {
+  overflow: hidden;
+  max-width: 100%;
+  max-height: 100%;
+}
+#projects .projectContainer .projectImgDiv {
+  width: 100%;
+  height: 100%;
+  grid-area: img;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#projects .projectContainer .projectImgDiv img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (min-width: 1024px) {
+  #projects .projectContainer .projectImgDiv img {
+    transition: transform 0.3s;
+  }
+}
+#projects .projectContainer .projectTitle {
+  grid-area: title;
+  font-family: "BebasNeue";
+}
+@media screen and (min-width: 360px) and (max-width: 1023px) {
+  #projects .projectContainer .projectTitle {
+    font-size: 1.25rem;
+    text-align: center;
+  }
+}
+#projects .projectContainer .projectDesc {
+  grid-area: p;
+  overflow: auto;
+  padding: 0.5rem;
 }/*# sourceMappingURL=main.css.map */

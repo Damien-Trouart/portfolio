@@ -28,11 +28,80 @@ main {
 .home {
     grid-area: home;
 
+    @include responsive ($breakpoint-desktop) {
+        flex-direction: row;
+        overflow: hidden;
+    }
+
     .home_txt {
         display: flex;
         flex-direction: column;
         justify-content: center;
         height: 50%;
+
+        @include responsive ($breakpoint-desktop) {
+            order: 1;
+            height: 100%;
+        }
     }
 }
 
+//? Contact Section
+#contact{
+    .contactContainer{
+        .contactForm{
+            display: grid;
+            grid-template-columns: repeat(4, 25%);
+            grid-template-rows: 10% 5% 10% 5% 10% 10% 10% 20% 10%;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            grid-template-areas:
+                "nl nl . ."
+                "ni ni ni ni "
+                "ml ml . ."
+                "mi mi mi mi"
+                "msgl msgl . ."
+                "msgi msgi msgi msgi"
+                "msgi msgi msgi msgi"
+                "msgi msgi msgi msgi"
+                "eb eb sb sb";
+
+            .nameLabel {
+                padding-top: 1rem;
+                grid-area: nl;
+            }
+            
+            .nameInput {
+                grid-area: ni;
+            }
+            
+            .mailLabel {
+                padding-top: 1rem;
+                grid-area: ml;
+            }
+            
+            .mailInput {
+                grid-area: mi;
+            }
+            
+            .msgLabel {
+                padding-top: 1rem;
+                grid-area: msgl;
+            }
+
+            .msgInput {
+                height: 100%;
+                grid-area: msgi;
+            }
+
+            .eraseBtn {
+                        grid-area: eb;
+                    }
+
+            .sendBtn {
+                grid-area: sb;
+            }
+        }
+    }
+}

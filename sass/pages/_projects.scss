@@ -8,7 +8,7 @@
 
             .projectContainer {
                 padding: 0.5rem;
-                border-radius: 5px;
+                // border-radius: 5px;
                 /* border:1px solid var(--txt-maincolor); */
                 /* box-shadow: var(--light-shadowcolor) 0 0 3px 1px; */
                 background-color: $gradient-light;
@@ -24,6 +24,23 @@
                     "p p img img"
                     "btn btn img img";
                 align-items: center;
+                @include responsive ($breakpoint-mobile, $breakpoint-desktop - 1px) {
+                    grid-template-areas:
+                        "title title title title"
+                        "p p img img"
+                        "btn btn img img";
+                }
+                
+                &:hover{
+                    @include responsive ($breakpoint-desktop){
+                        z-index: 10;
+                        background: linear-gradient(to right, $gradient-light, $gradient-dark);
+
+                        .projectImgDiv img {
+                            transform: scale(1.1);
+                        }
+                    }
+                }
 
                 &>* {
                     overflow: hidden;
@@ -38,16 +55,23 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    border-radius: 5px;
+                    // border-radius: 5px;
 
                     img {
                         @include img(cover);
+                        @include responsive ($breakpoint-desktop){
+                            transition: transform 0.3s;
+                        }
                     }
                 }
 
                 .projectTitle {
                     grid-area: title;
                     font-family: $title-font;
+                    @include responsive ($breakpoint-mobile, $breakpoint-desktop - 1px) {
+                        font-size: 1.25rem;
+                        text-align: center;
+                    }
                 }
 
                 .projectDesc {
