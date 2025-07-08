@@ -105,11 +105,18 @@ main {
             .eraseBtn {
                 margin-top: 1rem;
                 grid-area: eb;
+                @include responsive ($breakpoint-desktop) {
+                    width: 20%;
+                }
             }
             
             .sendBtn {
                 margin-top: 1rem;
                 grid-area: sb;
+                @include responsive ($breakpoint-desktop) {
+                    justify-self: end;
+                    width: 20%;
+                }
             }
         }
     }

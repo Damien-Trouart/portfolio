@@ -16,6 +16,7 @@
             .contactContainer {
                 width: 100%;
                 .contactText {
+                    margin-top: 1rem;
                     width: 100%;
                     text-align: justify;
                 }
@@ -23,6 +24,10 @@
                 .contactForm {
                     &>* {
                         font-family: $main-font;
+                    }
+
+                    .msgInput{
+                        font-size: $font-size;
                     }
                 }
             }

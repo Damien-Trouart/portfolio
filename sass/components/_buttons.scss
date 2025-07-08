@@ -56,10 +56,9 @@
 }
 @include responsive($breakpoint-desktop) {
     .projectBtn {
-        @include btn-hover;
-
         &:hover {
             font-weight: 500;
+            cursor: pointer;
         }
     }
 }
@@ -72,8 +71,9 @@
         @include btn-shared;
         padding: 5px;
         @include btn-active;
-        @include responsive ($breakpoint-desktop){
-            @include btn-hover;
+        &:hover{
+            font-weight: 500;
+            cursor: pointer;
         }
     }
 }

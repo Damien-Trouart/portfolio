@@ -38,6 +38,7 @@ span {
 
 button a {
   color: #333;
+  font-size: 0.85rem;
 }
 
 .btn {
@@ -110,12 +111,8 @@ button a {
 
 @media screen and (min-width: 1024px) {
   .projectBtn:hover {
-    cursor: pointer;
-    background-color: lightgrey;
-    transform: translateY(-2px);
-  }
-  .projectBtn:hover {
     font-weight: 500;
+    cursor: pointer;
   }
 }
 .contactForm .btn {
@@ -131,12 +128,9 @@ button a {
   box-shadow: grey 0 2px 3px 1px;
   background-color: lightgrey;
 }
-@media screen and (min-width: 1024px) {
-  .contactForm .btn:hover {
-    cursor: pointer;
-    background-color: lightgrey;
-    transform: translateY(-2px);
-  }
+.contactForm .btn:hover {
+  font-weight: 500;
+  cursor: pointer;
 }
 
 main {
@@ -227,9 +221,20 @@ main > section {
   margin-top: 1rem;
   grid-area: eb;
 }
+@media screen and (min-width: 1024px) {
+  #contact .contactContainer .contactForm .eraseBtn {
+    width: 20%;
+  }
+}
 #contact .contactContainer .contactForm .sendBtn {
   margin-top: 1rem;
   grid-area: sb;
+}
+@media screen and (min-width: 1024px) {
+  #contact .contactContainer .contactForm .sendBtn {
+    justify-self: end;
+    width: 20%;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -318,11 +323,15 @@ main > section {
   width: 100%;
 }
 #contact .contactContainer .contactText {
+  margin-top: 1rem;
   width: 100%;
   text-align: justify;
 }
 #contact .contactContainer .contactForm > * {
   font-family: "IMFellDoublePica";
+}
+#contact .contactContainer .contactForm .msgInput {
+  font-size: 0.85rem;
 }
 
 #projects {
