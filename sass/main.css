@@ -36,6 +36,10 @@ span {
   font-weight: bold;
 }
 
+button a {
+  color: #333;
+}
+
 .btn {
   font-family: "Cinzel";
   border: 1px solid #333;
@@ -220,9 +224,11 @@ main > section {
   grid-area: msgi;
 }
 #contact .contactContainer .contactForm .eraseBtn {
+  margin-top: 1rem;
   grid-area: eb;
 }
 #contact .contactContainer .contactForm .sendBtn {
+  margin-top: 1rem;
   grid-area: sb;
 }
 
