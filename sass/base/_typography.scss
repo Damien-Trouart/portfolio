@@ -37,10 +37,12 @@ button{
 
 h2{
     @include responsive($breakpoint-desktop){
-        font-size: 2rem;
+        font-size: $font-size-h2;
     }
 }
 
 p {
-    font-size: 1.25rem;
+    @include responsive($breakpoint-desktop){
+        font-size: $font-size-desktop;
+    }
 }
