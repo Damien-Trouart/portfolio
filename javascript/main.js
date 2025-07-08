@@ -1,6 +1,8 @@
 "use strict";
 import Burger from "./burger.js";
 import Project from "./project.js";
+import { submitContactForm } from "./contact.js";
+submitContactForm();
 //? Création Home Page
 const main = document.querySelector('main');
 main.innerHTML += `
