@@ -72,6 +72,8 @@
         @include btn-shared;
         padding: 5px;
         @include btn-active;
-        @include btn-hover;
+        @include responsive ($breakpoint-desktop){
+            @include btn-hover;
+        }
     }
 }

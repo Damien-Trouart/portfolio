@@ -74,7 +74,9 @@ main {
             
             .nameInput {
                 grid-area: ni;
-                width: 25%;
+                @include responsive ($breakpoint-desktop) {
+                    width: 25%;
+                }
             }
             
             .mailLabel {
@@ -83,8 +85,11 @@ main {
             }
             
             .mailInput {
-                width: 25%;
                 grid-area: mi;
+                @include responsive ($breakpoint-desktop) {
+                    width: 25%;
+                }
+                
             }
             
             .msgLabel {

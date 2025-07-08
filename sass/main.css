@@ -127,10 +127,12 @@ span {
   box-shadow: grey 0 2px 3px 1px;
   background-color: lightgrey;
 }
-.contactForm .btn:hover {
-  cursor: pointer;
-  background-color: lightgrey;
-  transform: translateY(-2px);
+@media screen and (min-width: 1024px) {
+  .contactForm .btn:hover {
+    cursor: pointer;
+    background-color: lightgrey;
+    transform: translateY(-2px);
+  }
 }
 
 main {
@@ -191,15 +193,23 @@ main > section {
 }
 #contact .contactContainer .contactForm .nameInput {
   grid-area: ni;
-  width: 25%;
+}
+@media screen and (min-width: 1024px) {
+  #contact .contactContainer .contactForm .nameInput {
+    width: 25%;
+  }
 }
 #contact .contactContainer .contactForm .mailLabel {
   padding-top: 1rem;
   grid-area: ml;
 }
 #contact .contactContainer .contactForm .mailInput {
-  width: 25%;
   grid-area: mi;
+}
+@media screen and (min-width: 1024px) {
+  #contact .contactContainer .contactForm .mailInput {
+    width: 25%;
+  }
 }
 #contact .contactContainer .contactForm .msgLabel {
   padding-top: 1rem;
@@ -382,6 +392,7 @@ main > section {
 }
 #projects .projectContainer .projectDesc {
   grid-area: p;
-  overflow: auto;
+  overflow-y: scroll;
+  overflow-x: hidden;
   padding: 0.5rem;
 }/*# sourceMappingURL=main.css.map */
