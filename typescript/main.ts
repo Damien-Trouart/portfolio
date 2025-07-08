@@ -157,15 +157,15 @@ function appear(e: HTMLElement, scrollingDown: boolean = true) {
     }
     e.animate(keyframes, options);
 }
-homeBtns.forEach((btn: HTMLElement) => {
-    appear(btn);
-});
+    homeBtns.forEach((btn: HTMLElement) => {
+        appear(btn);
+    });
 
 
 
-//? Ajout le burger menu en dimension phone/tablette
-if (window.matchMedia('screen and (max-width: #{breakpoint-desktop})').matches) {
-    const burger = new Burger();
-    burger.toggle(burger.nav);
-    burger.logoClick();
-}
+// //? Ajout le burger menu en dimension phone/tablette
+// if (window.matchMedia('screen and (max-width: #{breakpoint-desktop})').matches) {
+//     const burger = new Burger();
+//     burger.toggle(burger.nav);
+//     burger.logoClick();
+// }

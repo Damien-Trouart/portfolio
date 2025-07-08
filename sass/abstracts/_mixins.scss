@@ -38,9 +38,9 @@
     }
 }
 
-@mixin btn-shared {
+@mixin btn-shared ($borderColor) {
     font-family: $btn-font;
-    border: 1px solid $txt-maincolor;
+    border: 1px solid $borderColor;
     border-radius: 5px;
     background-color: $background-maincolor;
     box-shadow: $light-shadowcolor 0 4px 3px 1px;

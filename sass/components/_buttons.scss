@@ -1,6 +1,6 @@
 //? Boutons Home
 .btn {
-    @include btn-shared;
+    @include btn-shared ($txt-maincolor);
     @include btn-active;
     margin-bottom: 1rem;
 }
@@ -48,7 +48,7 @@
 
 //? Boutons Projects
 .projectBtn {
-    @include btn-shared;
+    @include btn-shared ($light-shadowcolor);
     height: 25px;
     width: 100px;
     grid-area: btn;
@@ -68,7 +68,7 @@
 //? Boutons Contact
 .contactForm{
     .btn{
-        @include btn-shared;
+        @include btn-shared ($light-shadowcolor);
         padding: 5px;
         @include btn-active;
         &:hover{

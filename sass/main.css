@@ -37,7 +37,7 @@ span {
 }
 
 button a {
-  color: #333;
+  color: #333 !important;
   font-size: 0.85rem;
 }
 
@@ -95,7 +95,7 @@ button a {
 }
 .projectBtn {
   font-family: "Cinzel";
-  border: 1px solid #333;
+  border: 1px solid grey;
   border-radius: 5px;
   background-color: #fff;
   box-shadow: grey 0 4px 3px 1px;
@@ -117,7 +117,7 @@ button a {
 }
 .contactForm .btn {
   font-family: "Cinzel";
-  border: 1px solid #333;
+  border: 1px solid grey;
   border-radius: 5px;
   background-color: #fff;
   box-shadow: grey 0 4px 3px 1px;
@@ -333,6 +333,9 @@ main > section {
 #contact .contactContainer .contactForm .msgInput {
   font-size: 0.85rem;
 }
+#contact .contactContainer .contactForm .eraseBtn, #contact .contactContainer .contactForm .sendBtn {
+  color: #333 !important;
+}
 
 #projects {
   grid-area: projects;
@@ -410,4 +413,8 @@ main > section {
   overflow-y: scroll;
   overflow-x: hidden;
   padding: 0.5rem;
+  scrollbar-width: none;
+}
+#projects .projectContainer .projectDesc::-webkit-scrollbar {
+  display: none;
 }/*# sourceMappingURL=main.css.map */

@@ -29,6 +29,10 @@
                     .msgInput{
                         font-size: $font-size;
                     }
+
+                    .eraseBtn, .sendBtn {
+                        color: $txt-maincolor !important;
+                    }
                 }
             }
 }

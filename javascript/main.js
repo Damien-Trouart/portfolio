@@ -1,5 +1,4 @@
 "use strict";
-import Burger from "./burger.js";
 import Project from "./project.js";
 import { submitContactForm } from "./contact.js";
 submitContactForm();
@@ -135,9 +134,3 @@ function appear(e, scrollingDown = true) {
 homeBtns.forEach((btn) => {
     appear(btn);
 });
-//? Ajout le burger menu en dimension phone/tablette
-if (window.matchMedia('screen and (max-width: #{breakpoint-desktop})').matches) {
-    const burger = new Burger();
-    burger.toggle(burger.nav);
-    burger.logoClick();
-}
