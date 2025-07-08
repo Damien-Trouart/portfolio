@@ -16,7 +16,8 @@
             <h2 class="contactTitle">Contact</h2>
             <div class="contactContainer">
                 <p class="contactText">Need a junior <span>full stack</span> web developer? Feel free to contact me for any <span>collaboration</span> or <span>career opportunity</span>!
-                <form class="contactForm" action="" method="">
+                <form class="contactForm" action="https://api.web3forms.com/submit" method="post">
+                    <input type="hidden" name="access_key" value="01dc65fe-419a-4250-a3e2-3a8f3750a5b7">
                     <label class="nameLabel" for="firstName">Name:</label>
                     <input class="nameInput" type="text" id="firstName" placeholder="Your name" required>
                     <!-- <label for="lastName">Prénom</label>
@@ -28,6 +29,8 @@
                         placeholder="Hello..."></textarea>
                     <input class="btn eraseBtn" type="reset" value="Erase">
                     <input class="btn sendBtn" type="submit" value="Send">
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                    <div id="result"></div>
             </div>
             </form>
         </section>
