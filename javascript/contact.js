@@ -3,6 +3,13 @@ export function submitContactForm() {
     const result = document.getElementById('result');
     form?.addEventListener('submit', function (e) {
         e.preventDefault();
+        //veridication du honeypot
+        const botcheck = form.querySelector('[name="botcheck"]');
+        if (botcheck && botcheck.checked) {
+            result.innerHTML = "Spam detected.";
+            return;
+        }
+        // Récupération des données du formulaire
         const formData = new FormData(form);
         const object = Object.fromEntries(formData);
         const json = JSON.stringify(object);

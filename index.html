@@ -19,13 +19,13 @@
                 <form class="contactForm" action="https://api.web3forms.com/submit" method="post">
                     <input type="hidden" name="access_key" value="01dc65fe-419a-4250-a3e2-3a8f3750a5b7">
                     <label class="nameLabel" for="firstName">Name:</label>
-                    <input class="nameInput" type="text" id="firstName" placeholder="Your name" required>
+                    <input class="nameInput" type="text" name="name" id="firstName" placeholder="Your name" required>
                     <!-- <label for="lastName">Prénom</label>
                                 <input type="text" id="lastName" placeholder="Marcel" required> -->
                     <label class="mailLabel" for="mail">Email:</label>
-                    <input class="mailInput" type="email" id="mail" placeholder="Your email adress" required>
+                    <input class="mailInput" type="email" name="email" id="mail" placeholder="Your email adress" required>
                     <label class="msgLabel" for="comment">Message:</label>
-                    <textarea class="msgInput" name="commentaire" id="comment" rows="5" cols="20"
+                    <textarea class="msgInput" name="message" id="comment" rows="5" cols="20"
                         placeholder="Hello..."></textarea>
                     <input class="btn eraseBtn" type="reset" value="Erase">
                     <input class="btn sendBtn" type="submit" value="Send">

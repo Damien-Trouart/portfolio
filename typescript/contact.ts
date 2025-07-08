@@ -1,9 +1,20 @@
 export function submitContactForm() {
+
     const form: HTMLFormElement | null = document.querySelector('.contactForm');
     const result: HTMLElement | null = document.getElementById('result');
 
+    
     form?.addEventListener('submit', function (e) {
         e.preventDefault();
+
+        //veridication du honeypot
+        const botcheck = (form.querySelector('[name="botcheck"]') as HTMLInputElement);
+        if (botcheck && botcheck.checked) {
+            result!.innerHTML = "Spam detected.";
+            return; 
+        }
+
+        // Récupération des données du formulaire
         const formData = new FormData(form);
         const object = Object.fromEntries(formData);
         const json = JSON.stringify(object);
