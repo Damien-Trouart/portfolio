@@ -33,7 +33,7 @@ if (window.matchMedia('screen and (min-width:360px)').matches) {
                 <div class="btn-img"><img src="./logo/github.png" alt="Github logo"></div>
                 Github
             </a></div>
-            <div class="btn btn-linkedin"><a href="https://linkedin.com/Damien-Trouart" target="_blank">
+            <div class="btn btn-linkedin"><a href="https://linkedin.com/in/damientrouart" target="_blank">
                 <div class="btn-img"><img src="./logo/linkedin-logo.png" alt="LinkedIn logo"></div>
                 Linkedin
             </a></div>
