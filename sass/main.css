@@ -41,6 +41,16 @@ button a {
   font-size: 0.85rem;
 }
 
+@media screen and (min-width: 1024px) {
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+p {
+  font-size: 1.25rem;
+}
+
 .btn {
   font-family: "Cinzel";
   border: 1px solid #333;

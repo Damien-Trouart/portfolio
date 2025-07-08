@@ -34,3 +34,13 @@ button{
         font-size: $font-size;
     }
 }
+
+h2{
+    @include responsive($breakpoint-desktop){
+        font-size: 2rem;
+    }
+}
+
+p {
+    font-size: 1.25rem;
+}
